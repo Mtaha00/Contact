@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="contact"
+            type="com.example.mvvm82.Contact" />
+        
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/inputName_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={contact.name}"
+            android:hint="name"
+            />
+        <EditText
+            android:id="@+id/inputLastName_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={contact.lastName}"
+            android:hint="last name"
+            />
+        <EditText
+            android:id="@+id/inputNumber_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="@={contact.number}"
+            android:hint="number"
+            />
+
+    </LinearLayout>
+</layout>
